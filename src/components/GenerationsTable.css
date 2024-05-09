@@ -1,0 +1,25 @@
+.container {
+  margin: 20px;
+}
+
+.pokemon-table {
+  width: 50%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.pokemon-table th,
+.pokemon-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.pokemon-table th {
+  background-color: #886868;
+}
+
+.loading {
+  font-style: italic;
+  color: gray;
+}
