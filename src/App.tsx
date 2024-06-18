@@ -1,23 +1,21 @@
 // App.tsx
 
-import Login from "./components/PokedexLogin";
-import GenerationsTable from "./components/GenerationsTable";
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import AppRoutes from "./routes/AppRoutes";
+import Layout from "./components/Layout";
 import "./App.css";
-
-function App() {
+const App: React.FC = () => {
   return (
     <>
-      <div>
-        <h1>Actividad 2: Conección a API no protegida</h1>
-        <GenerationsTable />
-        <h1>
-          Actividad 3: Conección a API con autenticación y almacenamiento de
-          sesión con localStorage
-        </h1>
-        <Login />
-      </div>
+      <Router>
+        <div>
+          <Layout>
+            <AppRoutes />
+          </Layout>
+        </div>
+      </Router>
     </>
   );
-}
-
+};
 export default App;

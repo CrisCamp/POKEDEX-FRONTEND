@@ -11,6 +11,8 @@ interface Pokemon {
     _id: string;
     generation: number;
   };
+  evolutions: { name: string }[];
+  preEvolutions: { name: string }[];
 }
 
 const PokemonInfo = () => {
@@ -58,6 +60,8 @@ const PokemonInfo = () => {
             <th>Peso</th>
             <th>Altura</th>
             <th>Generación</th>
+            <th>Pre-Evolución</th>
+            <th>Evolución</th>
           </tr>
         </thead>
         <tbody>
@@ -68,6 +72,20 @@ const PokemonInfo = () => {
               <td>{pokemon.weight}</td>
               <td>{pokemon.height}</td>
               <td>{pokemon.generation.generation}</td>
+              <td>
+                {pokemon.preEvolutions.length > 0
+                  ? pokemon.preEvolutions
+                      .map((preEvolution) => preEvolution.name)
+                      .join(", ")
+                  : "N/A"}
+              </td>
+              <td>
+                {pokemon.evolutions.length > 0
+                  ? pokemon.evolutions
+                      .map((evolution) => evolution.name)
+                      .join(", ")
+                  : "N/A"}
+              </td>
             </tr>
           ))}
         </tbody>
