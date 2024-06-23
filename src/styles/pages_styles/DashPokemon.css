@@ -1,0 +1,66 @@
+.pokedex-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters input[type="text"],
+.filters select {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.filters select {
+  padding: 8px 20px 8px 8px; /* Adjust padding for select box */
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.filters input[type="text"]:focus,
+.filters select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.pokemon-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.pokemon-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  transition: transform 0.2s;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-10px);
+}
+
+.pokemon-card h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.pokemon-card p {
+  margin: 10px 0;
+  font-size: 1em;
+}

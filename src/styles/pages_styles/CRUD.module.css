@@ -1,0 +1,68 @@
+/* PokemonInfo.module.css */
+.pokedex-info {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.pokedex-info h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pokedex-info button {
+  background-color: #3d7dca;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pokedex-info button:hover {
+  background-color: #265986;
+}
+
+.pokedex-info .error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.pokedex-info table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.pokedex-info th,
+.pokedex-info td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.pokedex-info th {
+  background-color: #3d7dca;
+  color: #fff;
+}
+
+.pokedex-info td button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.pokedex-info td button:hover {
+  background-color: #c82333;
+}

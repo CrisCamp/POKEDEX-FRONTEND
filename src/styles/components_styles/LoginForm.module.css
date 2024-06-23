@@ -1,15 +1,3 @@
-/* src/components/PokedexLogin.css */
-
-.pokedex-login {
-  width: 300px;
-  margin: 50px auto;
-}
-
-.pokedex-pokeInfo {
-  width: 100%;
-  margin: 0 auto;
-}
-
 .pokedex-screen {
   border: 10px solid #000;
   border-radius: 10px;
